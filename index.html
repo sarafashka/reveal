@@ -1,40 +1,109 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 	<head>
 		<meta charset="utf-8">
+
+		<title>Solid principles</title>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="dist/theme/custom.css">
+		<style type="text/css" media="screen">
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h1 {
+				color: #fff;
+			}
+		</style>
 	</head>
+
 	<body>
+
 		<div class="reveal">
+
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section data-background="#674ea7">
+					<h1>SOLID</h1>
+				</section>
+
+        <section data-background="#674ea7">
+          <h1>What ?</h1>
+          <p>5 principles of Object-Oriented class design</p>
+				</section>
+
+
+				<section>
+					<section data-background="#674ea7">
+						<h2><span class="font-white">S</span>OLID</h2>
+            <p>The Single Responsibility Principle</p>
+					</section>
+					<section data-background="#674ea7">
+						<p>A class should do one thing and therefore it should have only a single reason to change</p>
+					</section>
+				</section>
+
+        <section>
+					<section data-background="#674ea7">
+						<h2>S<span class="font-white">O</span>LID</h2>
+            <p>Open-Closed Principle</p>
+					</section>
+					<section data-background="#674ea7">
+						<p>Classes should be open for extension and closed to modification</p>
+					</section>
+				</section>
+
+        <section>
+					<section data-background="#674ea7">
+						<h2>SO<span class="font-white">L</span>ID</h2>
+            <p>Liskov Substitution Principle</p>
+					</section>
+					<section data-background="#674ea7">
+						<p>Subclasses should be substitutable for their base classes</p>
+					</section>
+				</section>
+
+
+        <section>
+					<section data-background="#674ea7">
+						<h2>SOL<span class="font-white">I</span>D</h2>
+            <p>Interface Segregation Principle</p>
+					</section>
+					<section data-background="#674ea7">
+						<p>Many client-specific interfaces are better than one general-purpose interface</p>
+					</section>
+				</section>
+
+
+        <section>
+					<section data-background="#674ea7">
+						<h2>SOLI<span class="font-white">D</span></h2>
+            <p>Dependency Inversion Principle</p>
+					</section>
+					<section data-background="#674ea7">
+						<p>Classes should depend upon interfaces or abstract classes instead of concrete classes and functions</p>
+					</section>
+				</section>
+
+        <section data-background="#674ea7">
+          <h1>Why ?</h1>
+          <p> To create understandable, readable, and testable code that many developers can collaboratively work on</p>
+				</section>
+
 			</div>
+
 		</div>
 
 		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			Reveal.initialize({
+				center: true,
+				transition: 'slide',
 			});
+
 		</script>
+
 	</body>
 </html>
